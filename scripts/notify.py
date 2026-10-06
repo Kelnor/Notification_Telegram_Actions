@@ -77,7 +77,7 @@ def main():
     schedules = data.get("schedules", [])
     
     token = get_env_or_config("TELEGRAM_BOT_TOKEN", data.get("telegram_bot_token", ""))
-    chat_id = get_env_or_config("TELEGRAM_CHAT_ID", data.get("telegram_chat_id", ""))
+    default_chat_id = get_env_or_config("TELEGRAM_CHAT_ID", data.get("telegram_chat_id", ""))
     
     now_kst = datetime.now(KST)
     today_str = now_kst.strftime("%Y-%m-%d")
@@ -125,11 +125,14 @@ def main():
             time.sleep(remaining_seconds)
             current_now = datetime.now(KST)
 
+        target_chat_id = str(item.get("chat_id") or "").strip() or default_chat_id
+        recipient_name = item.get("recipient_name", "")
+
         # 발송 처리
         if sent_today_count >= daily_limit:
             print(f"[WARNING] Daily limit reached during processing.")
             send_telegram_message(
-                token, chat_id,
+                token, target_chat_id or default_chat_id,
                 f"⚠️ <b>[텔레그램 알림이 경고]</b>\n오늘 일일 알림 한도({daily_limit}회)에 도달하여 추가 알림 발송이 일시 중단됩니다."
             )
             break
@@ -146,8 +149,9 @@ def main():
             f"예약일시 : {time_display}"
         )
         
-        print(f"[SENDING] Triggering Telegram API for '{title}' at {datetime.now(KST).strftime('%H:%M:%S KST')}...")
-        success = send_telegram_message(token, chat_id, telegram_text)
+        target_desc = f"{recipient_name} ({target_chat_id})" if recipient_name else target_chat_id
+        print(f"[SENDING] Triggering Telegram API for '{title}' to {target_desc} at {datetime.now(KST).strftime('%H:%M:%S KST')}...")
+        success = send_telegram_message(token, target_chat_id, telegram_text)
         
         if success:
             item["status"] = "sent"
