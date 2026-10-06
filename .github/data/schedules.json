@@ -153,6 +153,18 @@
       "status": "pending",
       "created_at": "2026-10-06T03:22:24.648Z",
       "sent_at": null
+    },
+    {
+      "id": "item_1791256972882",
+      "title": "퍼스널컬러 방문",
+      "message": "나시 + 흰티 입고 퍼스널컬러 업체 방문",
+      "datetime": "2026-10-09T11:00:00+09:00",
+      "chat_id": "5258287157",
+      "recipient_name": "Kang",
+      "created_by": "Kelnor",
+      "status": "pending",
+      "created_at": "2026-10-06T03:22:52.882Z",
+      "sent_at": null
     }
   ]
 }
