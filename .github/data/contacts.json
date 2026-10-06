@@ -1,0 +1,18 @@
+{
+  "users": {
+    "kelnor": [
+      {
+        "id": "c_1791254353189",
+        "name": "Kong",
+        "chatId": "6621491115",
+        "isDefault": true
+      },
+      {
+        "id": "c_1791254360380",
+        "name": "Kang",
+        "chatId": "5258287157",
+        "isDefault": false
+      }
+    ]
+  }
+}
