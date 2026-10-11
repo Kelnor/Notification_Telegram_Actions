@@ -189,6 +189,18 @@
       "status": "pending",
       "created_at": "2026-10-11T13:24:29.357Z",
       "sent_at": null
+    },
+    {
+      "id": "item_1791725088940",
+      "title": "네이버 예약 필요(백제문화단지/",
+      "message": "https://map.naver.com/p/entry/place/12019039?lng=126.9067627&lat=36.3065371&placePath=%2Fticket%3Ffrom%3Dmap%26fromPanelNum%3D1%26additionalHeight%3D76%26timestamp%3D202610112223%26locale%3Dko%26svcName%3Dmap_pcv5&entry=plt&searchType=place&c=15.00,0,0,0,dh",
+      "datetime": "2026-10-13T09:30:00+09:00",
+      "chat_id": "6621491115",
+      "recipient_name": "Kong",
+      "created_by": "Kelnor",
+      "status": "pending",
+      "created_at": "2026-10-11T13:24:48.940Z",
+      "sent_at": null
     }
   ]
 }
