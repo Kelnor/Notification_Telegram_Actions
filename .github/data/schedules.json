@@ -174,9 +174,9 @@
       "chat_id": "6621491115",
       "recipient_name": "Kong",
       "created_by": "Kelnor",
-      "status": "pending",
+      "status": "sent",
       "created_at": "2026-10-11T13:23:57.823Z",
-      "sent_at": null
+      "sent_at": "2026-10-13T10:11:43.633725+09:00"
     },
     {
       "id": "item_1791725069357",
@@ -186,9 +186,9 @@
       "chat_id": "6621491115",
       "recipient_name": "Kong",
       "created_by": "Kelnor",
-      "status": "pending",
+      "status": "sent",
       "created_at": "2026-10-11T13:24:29.357Z",
-      "sent_at": null
+      "sent_at": "2026-10-13T10:11:44.209498+09:00"
     },
     {
       "id": "item_1791725088940",
@@ -198,9 +198,9 @@
       "chat_id": "6621491115",
       "recipient_name": "Kong",
       "created_by": "Kelnor",
-      "status": "pending",
+      "status": "sent",
       "created_at": "2026-10-11T13:24:48.940Z",
-      "sent_at": null
+      "sent_at": "2026-10-13T10:11:44.784451+09:00"
     }
   ]
 }
